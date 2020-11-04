@@ -124,14 +124,16 @@ function App() {
       ))
       state.decentrablog.methods.createPost(body, result[0].hash)
         .send({ from: state.account })
-        .on('confirmation', (confNr) => {
+        .once('confirmation', (confNr) => {
           console.log(confNr);
+          setState(prevState => ({
+            ...prevState,    
+            loading : false 
+            }
+          ))
           if (confNr === 1) {
-            setState(prevState => ({
-              ...prevState,    
-              loading : false 
-              }
-            ))
+            //how to avoid?
+            window.location.reload()
           }
       })
     })
@@ -158,6 +160,8 @@ function App() {
             loading : false 
             }
           ))
+          //How to avoid this?
+          window.location.reload()
         }
     })
   }
