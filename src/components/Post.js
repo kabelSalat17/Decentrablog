@@ -1,5 +1,5 @@
 import React from 'react'
-import { MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCol } from 'mdbreact';
+import { MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCol, MDBIcon } from 'mdbreact';
 import Identicon from 'identicon.js';
 
 function Post({post, tipPostOwner}) {
@@ -27,7 +27,7 @@ function Post({post, tipPostOwner}) {
                         TIPS: {window.web3.utils.fromWei(post.tipAmount.toString(), 'Ether')} ETH
                     </small>
                     <button
-                        className="btn btn-link btn-sm float-right pt-0"
+                        className="btn btn-sm float-right"
                         name={post.id}
                         onClick={(event) => {
                         let tipAmount = window.web3.utils.toWei('0.1', 'Ether')
@@ -35,7 +35,7 @@ function Post({post, tipPostOwner}) {
                         tipPostOwner(event.target.name, tipAmount)
                         }}
                     >
-                        TIP 0.1 ETH
+                        0.1 ETH <MDBIcon className="ml-1" fab icon="ethereum" size="1x"/> 
                     </button>
                 </MDBCardBody>
             </MDBCard>

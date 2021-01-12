@@ -104,6 +104,9 @@ function App() {
       setState({ ...state, buffer: Buffer(reader.result) })
       console.log('buffer', state.buffer)
     }
+
+    let label = document.getElementById("inputGroupFile01").value.slice(12,);
+    document.getElementById("img-label").innerHTML = label;
   }
 
   const createPost = body => {

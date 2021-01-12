@@ -1,26 +1,20 @@
 import React from 'react';
-import Form from './Form';
-import Post from './Post';
+
+import PostForm from './PostForm';
+import Posts from './Posts';
 
 function Main({ posts,captureFile,createPost,tipPostOwner }) {
 
     return (
-      <div className="container-fluid mt-5">
-        <div className="row">
-          <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '70vw' }}>
-            <div className="content mr-auto ml-auto">
+      <div className="wrapper">
+        <div className="split left">
+          <div className="centered">
+            <PostForm captureFile={captureFile} createPost={createPost} />  
+          </div>
+        </div>
 
-              <h2 className="text-center">Share post</h2>
-              
-              <Form captureFile={captureFile} createPost={createPost} />
-
-              { posts && posts.map((post, key) => (
-                  <Post key={key} post={post} tipPostOwner={tipPostOwner} />
-                )
-              )}
-
-            </div>
-          </main>
+        <div className="split right">
+            <Posts posts={posts} tipPostOwner={tipPostOwner} />
         </div>
       </div>
     );

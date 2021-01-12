@@ -1,1 +1,66 @@
-/* Styles go here */
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+.input-group-text {
+    padding: .375rem .75rem 0.1rem 0.75rem;
+ 
+} 
+
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.custom-file {
+    text-align: left;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.split.right::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+  }
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.split.right, body{
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+.btn {
+    margin: 0;
+    border-radius: 30em;
+    padding: 0rem;
+}
+
+.btn.btn-sm {
+    padding: 0.75rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95rem;
+}
