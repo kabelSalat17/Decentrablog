@@ -9,6 +9,7 @@ module.exports = {
       network_id: "*" // Match any network id
     },
   },
+  //Where contracts and abis are saved
   contracts_directory: './src/contracts/',
   contracts_build_directory: './src/abis/',
   compilers: {
