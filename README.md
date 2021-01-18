@@ -7,9 +7,8 @@
 <ul>
   <li>Node.js v12.18.4+</li>
   <li> Truffle v5.1.13</li>
-  //====To install=========\\
   <li> Ganache </li>
-  <li> MetamasK extension </li>
+  <li> Metamask - Chrome Extension </li>
 </ul>
 
 
