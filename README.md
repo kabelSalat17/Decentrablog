@@ -1,5 +1,11 @@
 <h1>DECENTRABLOG</h1>
 
-Decentrablog is a an unstoppable and decentralized blog on Ethreum Blockchain where you can upload images and share some posts with other people. Moreover, you can tip your favourite content and help them to appear on the top of the feed.
+<p>Decentrablog is a an unstoppable and decentralized blog on Ethreum Blockchain where you can upload images and share some posts with other people. Moreover, you can tip your favourite content and help them to appear on the top of the feed. </p>
 
-<h3>Prerequisites</h3>
+<h3>prerequisites</h3>
+
+<ul>
+  <li>Node.js v12.18.4+</li>
+</ul>
+
+
